@@ -1,4 +1,4 @@
-package org.dougllas.sbootreactapp;
+package org.dougllas.macrosapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -19,9 +19,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @SpringBootApplication
 @EnableAutoConfiguration
-@EntityScan("org.dougllas.springboot.model")
-@ComponentScan(basePackages = "org.dougllas")
-@EnableJpaRepositories(basePackages = "org.dougllas.springboot.repository")
+@EntityScan("org.dougllas.macrosapp.model")
+@ComponentScan(basePackages = "org.dougllas.macrosapp")
+@EnableJpaRepositories(basePackages = "org.dougllas.macrosapp.repository")
 public class SpringConfiguration extends SpringBootServletInitializer {
 
     @Bean

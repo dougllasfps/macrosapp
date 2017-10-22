@@ -6,7 +6,8 @@ class Header extends React.Component{
     render(){
         return (
             <header className="header">
-                <h1>App Header {this.props.header}</h1>
+                <h1>{this.props.header}</h1>
+                <h2>Usuario Logado: {this.props.usuarioLogado ? this.props.usuarioLogado.nome : null}</h2>
             </header>
         );
     }
@@ -14,7 +15,7 @@ class Header extends React.Component{
 
 const mapStateToProps = (state) => {
     return {
-        header: state.alimentoReducer.valor
+        usuarioLogado: state.usuarios.usuarioLogado
     }
 }
 
