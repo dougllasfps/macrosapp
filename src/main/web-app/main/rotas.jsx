@@ -16,6 +16,7 @@ class Rotas extends React.Component{
         return (
           <Router history={hashHistory}>
             <Route path="/" component={Home}/>
+            <Route path="/home" component={Home}/>
             <Route path="/login" component={Login} />
           </Router>
         );
