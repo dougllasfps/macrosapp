@@ -26,7 +26,7 @@ class Login extends Component{
         let {usuarioLogado} = this.props;
         return (
             <Container>
-                        <div className="card card-container">
+                <div className="card card-container">
                  <img id="profile-img" className="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
                  <p id="profile-name" className="profile-name-card"></p>
                     <Form className="form-signin">

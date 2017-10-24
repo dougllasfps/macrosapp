@@ -1,4 +1,4 @@
-import {Router, Route, hashHistory,IndexRoute, Redirect} from 'react-router'
+import {Router, Route, hashHistory ,IndexRoute, Redirect} from 'react-router'
 import AlimentosForm from '../alimentos/alimentosform'
 import Login from '../login/login'
 import Home from '../templates/home'
@@ -15,8 +15,8 @@ class Rotas extends React.Component{
     render(){
         return (
           <Router history={hashHistory}>
-            <Route path="/" component={Login} />
-            <Route path="/home" component={Home}/>
+            <Route path="/" component={Home}/>
+            <Route path="/login" component={Login} />
           </Router>
         );
     }

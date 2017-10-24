@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../templates/header'
 import Footer from '../templates/footer'
 import Menu from '../templates/menu'
+import Autenticated from '../templates/auth/autenticated'
 
 import Rotas from './rotas'
 

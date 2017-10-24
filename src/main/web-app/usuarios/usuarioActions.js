@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {withRouter} from 'react-router'
+import {Redirect} from 'react-router'
 
 const URL = "http://localhost:8080/usuarios"
 
@@ -11,6 +11,6 @@ export const signup = (login, senha) => {
                 type : '_SIGNIN', 
                 payload: resp.data
             }))
-            .then(resp=> withRouter.push("/home"))
+            .then(resp=> <Redirect to="/home" />)
     }    
 }
